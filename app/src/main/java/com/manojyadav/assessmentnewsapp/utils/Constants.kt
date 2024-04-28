@@ -1,5 +1,3 @@
-
-
 package com.manojyadav.assessmentnewsapp.utils
 
 class Constants {

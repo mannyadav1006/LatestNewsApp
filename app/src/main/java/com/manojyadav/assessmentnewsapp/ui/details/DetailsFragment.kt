@@ -1,5 +1,3 @@
-
-
 package com.manojyadav.assessmentnewsapp.ui.details
 
 import android.os.Bundle

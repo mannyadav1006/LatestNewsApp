@@ -1,4 +1,3 @@
-
 package com.manojyadav.assessmentnewsapp.ui.feed
 
 import android.app.SearchManager

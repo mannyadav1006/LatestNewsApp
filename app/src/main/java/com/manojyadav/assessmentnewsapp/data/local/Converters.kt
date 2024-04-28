@@ -1,4 +1,3 @@
-
 package com.manojyadav.assessmentnewsapp.data.local
 
 import androidx.room.TypeConverter

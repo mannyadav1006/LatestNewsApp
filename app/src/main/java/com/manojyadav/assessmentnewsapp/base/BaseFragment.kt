@@ -1,4 +1,3 @@
-
 package com.manojyadav.assessmentnewsapp.base
 
 import android.os.Bundle

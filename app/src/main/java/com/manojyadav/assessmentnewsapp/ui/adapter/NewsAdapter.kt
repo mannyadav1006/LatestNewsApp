@@ -1,4 +1,3 @@
-
 package com.manojyadav.assessmentnewsapp.ui.adapter
 
 import android.view.LayoutInflater

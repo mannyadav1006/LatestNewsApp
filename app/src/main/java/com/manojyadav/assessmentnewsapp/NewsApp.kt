@@ -1,5 +1,3 @@
-
-
 package com.manojyadav.assessmentnewsapp
 
 import android.app.Application

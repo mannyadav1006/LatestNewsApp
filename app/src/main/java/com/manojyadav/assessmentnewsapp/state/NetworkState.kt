@@ -1,5 +1,3 @@
-
-
 package com.manojyadav.assessmentnewsapp.state
 
 sealed class NetworkState<T>(val data: T? = null, val message: String? = null) {

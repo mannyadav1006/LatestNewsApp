@@ -1,4 +1,3 @@
-
 package com.manojyadav.assessmentnewsapp.network.api
 
 import com.manojyadav.assessmentnewsapp.data.model.NewsResponse
