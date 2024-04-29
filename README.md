@@ -85,6 +85,19 @@ The test comprises of testing the functionality of Favorite News Room Database l
 
 [Mock Webserver] is used to test the Network api response in case of successful data, empty, failed case.
 
+### `Instruction to open project in android studio`
+you can copy the Github repository url and create Project using Version control in android studio. (please install github if not installed)
+or 
+You can download the project and unzip it in your preferred folder. and then open the project in android studio.  
 
+### `Instruction to create APK in android studio`
+After successfully opening the project in android studio.Run the app from android studio (create virtual device or connect any real device before running app).
+when app run successfully in device. 
+Please click on (Build) Tab after clicking drop down will open and then click (Build Bundle(s)/Apk) option and then you will see two option again Build APK and Build Bundle. Click on Build APK then your apk will start creating.
+when  apk created successfully. 
+
+
+### `To find APK in project`
+Go to Project -> APP -> Build -> Output -> APK -> Debug -> APK (APK which we want to install)
 
 
