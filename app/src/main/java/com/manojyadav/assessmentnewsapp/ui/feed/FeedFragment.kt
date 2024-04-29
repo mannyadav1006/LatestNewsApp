@@ -27,7 +27,6 @@ import com.manojyadav.assessmentnewsapp.utils.EndlessRecyclerOnScrollListener
 import com.manojyadav.assessmentnewsapp.utils.EspressoIdlingResource
 import kotlinx.coroutines.flow.collect
 
-
 class FeedFragment : BaseFragment<FragmentFeedBinding>() {
     override fun setBinding(): FragmentFeedBinding =
         FragmentFeedBinding.inflate(layoutInflater)
@@ -76,7 +75,10 @@ class FeedFragment : BaseFragment<FragmentFeedBinding>() {
             mainViewModel.fetchNews(countryCode)
         }
         binding.swipeRefreshLayout.setOnRefreshListener(refreshListener)
+
     }
+
+
 
     private fun setupRecyclerView() {
         newsAdapter = NewsAdapter()
@@ -221,8 +223,7 @@ class FeedFragment : BaseFragment<FragmentFeedBinding>() {
             true
         }
 
-        val searchPlate =
-            searchView.findViewById(androidx.appcompat.R.id.search_src_text) as EditText
+        val searchPlate: EditText = searchView.findViewById(androidx.appcompat.R.id.search_src_text)
         searchPlate.hint = "Search"
         val searchPlateView: View =
             searchView.findViewById(androidx.appcompat.R.id.search_plate)

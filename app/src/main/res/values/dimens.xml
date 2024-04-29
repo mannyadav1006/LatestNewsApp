@@ -10,4 +10,10 @@
     <dimen name="_10dp">10dp</dimen>
     <dimen name="_15dp">15dp</dimen>
     <dimen name="_50dp">50dp</dimen>
+    <dimen name="_45dp">45dp</dimen>
+    <dimen name="_30dp">30dp</dimen>
+    <dimen name="_60dp">60dp</dimen>
+    <dimen name="dp_35dp">35dp</dimen>
+    <dimen name="_25dp">25dp</dimen>
+
 </resources>

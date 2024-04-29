@@ -1,5 +1,5 @@
 
-object Deps {
+object Dependency {
     object Versions {
         const val compile_sdk = 30
         const val min_sdk = 21

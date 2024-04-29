@@ -6,10 +6,10 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath(Deps.gradle_plugin)
-        classpath(Deps.Kotlin.gradle_plugin)
-        classpath(Deps.Hilt.gradlePlugin)
-        classpath(Deps.Navigation.safeArgs_gradle)
+        classpath(Dependency.gradle_plugin)
+        classpath(Dependency.Kotlin.gradle_plugin)
+        classpath(Dependency.Hilt.gradlePlugin)
+        classpath(Dependency.Navigation.safeArgs_gradle)
 
     }
 }

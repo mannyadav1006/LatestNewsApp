@@ -9,7 +9,7 @@ plugins {
 }
 
 android {
-    compileSdk = Deps.Versions.compile_sdk
+    compileSdk = Dependency.Versions.compile_sdk
 
     buildFeatures {
         viewBinding = true
@@ -18,10 +18,10 @@ android {
 
     defaultConfig {
         applicationId = "com.manojyadav.assessmentnewsapp"
-        minSdk = Deps.Versions.min_sdk
-        targetSdk = Deps.Versions.target_sdk
-        versionCode = Deps.Versions.app_version_code
-        versionName = Deps.Versions.app_version_name
+        minSdk = Dependency.Versions.min_sdk
+        targetSdk = Dependency.Versions.target_sdk
+        versionCode = Dependency.Versions.app_version_code
+        versionName = Dependency.Versions.app_version_name
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         javaCompileOptions {
             annotationProcessorOptions {
@@ -91,91 +91,91 @@ android {
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     //App Compat, layout, Core
-    implementation(Deps.AndroidX.appCompat)
-    implementation(Deps.AndroidX.constraint_layout)
-    implementation(Deps.AndroidX.ktx_core)
+    implementation(Dependency.AndroidX.appCompat)
+    implementation(Dependency.AndroidX.constraint_layout)
+    implementation(Dependency.AndroidX.ktx_core)
 
     //Material
-    implementation(Deps.Google.material)
+    implementation(Dependency.Google.material)
 
     //Room
-    implementation(Deps.Room.runtime)
-    implementation(Deps.Room.ktx)
+    implementation(Dependency.Room.runtime)
+    implementation(Dependency.Room.ktx)
     androidTestImplementation(project(":app"))
-    kapt(Deps.Room.compiler)
+    kapt(Dependency.Room.compiler)
 
     // Activity KTX
-    implementation(Deps.AndroidX.ktx_activity)
+    implementation(Dependency.AndroidX.ktx_activity)
 
     // Lifecycle
-    implementation(Deps.Lifecycle.extensions)
-    implementation(Deps.Lifecycle.lifeCycleLiveData)
-    implementation(Deps.Lifecycle.viewmodel)
-    implementation(Deps.Lifecycle.lifeCycleRunTime)
+    implementation(Dependency.Lifecycle.extensions)
+    implementation(Dependency.Lifecycle.lifeCycleLiveData)
+    implementation(Dependency.Lifecycle.viewmodel)
+    implementation(Dependency.Lifecycle.lifeCycleRunTime)
 
     // Retrofit
-    implementation(Deps.Retrofit.main)
-    implementation(Deps.Retrofit.converterGSON)
+    implementation(Dependency.Retrofit.main)
+    implementation(Dependency.Retrofit.converterGSON)
 
     // OkHTTP
-    implementation(Deps.OkHttp.main)
-    implementation(Deps.OkHttp.logging_interceptor)
+    implementation(Dependency.OkHttp.main)
+    implementation(Dependency.OkHttp.logging_interceptor)
 
     // Coroutines
-    implementation(Deps.Coroutines.core)
-    implementation(Deps.Coroutines.android)
+    implementation(Dependency.Coroutines.core)
+    implementation(Dependency.Coroutines.android)
 
     //Dagger - Hilt
-    implementation(Deps.Hilt.android)
-    kapt(Deps.Hilt.android_compiler)
+    implementation(Dependency.Hilt.android)
+    kapt(Dependency.Hilt.android_compiler)
 
     //Navigation
-    implementation(Deps.Navigation.navigationFragment)
-    implementation(Deps.Navigation.navigationKtx)
+    implementation(Dependency.Navigation.navigationFragment)
+    implementation(Dependency.Navigation.navigationKtx)
 
     // Glide
-    implementation(Deps.Glide.runtime)
-    kapt(Deps.Glide.compiler)
+    implementation(Dependency.Glide.runtime)
+    kapt(Dependency.Glide.compiler)
 
     //Swipe Refresh Layout
-    implementation(Deps.SwipeRefreshLayout)
+    implementation(Dependency.SwipeRefreshLayout)
 
     //Idling Resource
-    implementation(Deps.AndroidX.Test.Espresso.idling_resource)
+    implementation(Dependency.AndroidX.Test.Espresso.idling_resource)
 
     //Testing dependencies
-    testImplementation(Deps.junit)
-    testImplementation(Deps.Test.Mockito.core)
-    testImplementation(Deps.Test.Mockito.inline)
-    testImplementation(Deps.Test.Mockito.kotlin)
-    testImplementation(Deps.AndroidX.Test.arch_core_testing)
-    testImplementation(Deps.AndroidX.Test.core)
-    testImplementation(Deps.Test.robolectric)
-    testImplementation(Deps.Test.truth)
-    testImplementation(Deps.Coroutines.test)
-    testImplementation(Deps.OkHttp.mockWebServer)
-    androidTestImplementation(Deps.AndroidX.Test.arch_core_testing)
-    androidTestImplementation(Deps.AndroidX.Test.junit)
-    androidTestImplementation(Deps.AndroidX.Test.junitKtx)
-    androidTestImplementation(Deps.AndroidX.Test.coreKtx)
-    androidTestImplementation(Deps.Test.Mockito.kotlin)
-    androidTestImplementation(Deps.Test.Mockito.dexMaker)
-    androidTestImplementation(Deps.Coroutines.test) {
+    testImplementation(Dependency.junit)
+    testImplementation(Dependency.Test.Mockito.core)
+    testImplementation(Dependency.Test.Mockito.inline)
+    testImplementation(Dependency.Test.Mockito.kotlin)
+    testImplementation(Dependency.AndroidX.Test.arch_core_testing)
+    testImplementation(Dependency.AndroidX.Test.core)
+    testImplementation(Dependency.Test.robolectric)
+    testImplementation(Dependency.Test.truth)
+    testImplementation(Dependency.Coroutines.test)
+    testImplementation(Dependency.OkHttp.mockWebServer)
+    androidTestImplementation(Dependency.AndroidX.Test.arch_core_testing)
+    androidTestImplementation(Dependency.AndroidX.Test.junit)
+    androidTestImplementation(Dependency.AndroidX.Test.junitKtx)
+    androidTestImplementation(Dependency.AndroidX.Test.coreKtx)
+    androidTestImplementation(Dependency.Test.Mockito.kotlin)
+    androidTestImplementation(Dependency.Test.Mockito.dexMaker)
+    androidTestImplementation(Dependency.Coroutines.test) {
         exclude(group = "org.jetbrains.kotlinx", module = "kotlinx-coroutines-debug")
     }
-    androidTestImplementation(Deps.AndroidX.Test.Espresso.core) {
+    androidTestImplementation(Dependency.AndroidX.Test.Espresso.core) {
         exclude(group = "org.checkerframework", module = "checker")
     }
-    androidTestImplementation(Deps.AndroidX.Test.Espresso.contrib) {
+    androidTestImplementation(Dependency.AndroidX.Test.Espresso.contrib) {
         exclude(group = "org.checkerframework", module = "checker")
     }
-    androidTestImplementation(Deps.AndroidX.Test.Espresso.intents) {
+    androidTestImplementation(Dependency.AndroidX.Test.Espresso.intents) {
         exclude(group = "org.checkerframework", module = "checker")
     }
-    debugImplementation(Deps.AndroidX.Test.fragmentTest) {
+    debugImplementation(Dependency.AndroidX.Test.fragmentTest) {
         exclude(group = "androidx.test", module = "monitor")
     }
-    debugImplementation(Deps.AndroidX.Test.core) {
+    debugImplementation(Dependency.AndroidX.Test.core) {
         exclude(group = "androidx.test", module = "monitor")
     }
 }
