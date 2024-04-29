@@ -29,7 +29,11 @@ The UI consists of two parts
 
     b) `BookmarkFragment` - Show bookmarked news articles.
 
-    c) `DetailsFragment` - Show webview with floating action button for loading & saving news article.
+    c) `DetailsFragment` - Show webview with bookmark floating action button for loading & saving news article.
+
+### Dark Theme/Day Theme
+User can switch their theme by checking switch button. if switch button is unchecked then day theme will show and if switch button is checked then night theme will checked.
+user theme preference will be stored in SharedPreference Manager
 
 ### Model
 Model is generated from `JSON` data into a Kotlin data class.
@@ -47,6 +51,9 @@ The `ApplicationModule.kt` class provides  `Singleton` reference for `Retrofit`,
 The network layer is composed of Repository, ApiService.
 `NewsApi` - Is an interface containing the suspend functions for retrofit API call.
 `NewsRepository` - Holds the definition of the remote/local repository call.
+
+
+
 
  ## Tech Stack
 * [Android appcompat], [KTX],

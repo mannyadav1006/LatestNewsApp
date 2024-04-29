@@ -23,6 +23,7 @@
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
                 <androidx.appcompat.widget.SwitchCompat
+                    android:layout_marginEnd="@dimen/_15dp"
                     android:layout_gravity="end"
                     android:layout_alignParentEnd="true"
                     android:id="@+id/changetheme"
